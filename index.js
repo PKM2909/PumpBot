@@ -1,3 +1,15 @@
+// tiny health server for Fly
+try {
+  const express = require("express");
+  const app = express();
+  app.get("/health", (_, res) => res.send("ok"));
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => console.log("health on", port));
+} catch (e) {
+  console.log("health server not started:", e.message);
+}
+
+
 // pumpbot.js — CHDPU AutoPump (admin DM trigger only, progress relayed to group)
 require("dotenv").config();
 const TelegramBot = require("node-telegram-bot-api");
