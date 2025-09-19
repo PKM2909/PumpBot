@@ -1,0 +1,7 @@
+Update bot to handle CHDPU token transactions autonomously
+
+Rename index.js to index_autonomous_chdpu.js and update environment variables, client initialization, and bot logic to support autonomous CHDPU token transactions via a hot wallet using Ethers.js.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: be940e8d-6c25-43dd-805c-38c5dac4ed5c
+Replit-Commit-Checkpoint-Type: full_checkpoint
